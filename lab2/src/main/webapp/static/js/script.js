@@ -90,7 +90,7 @@ function getCursorPosition(canvas, event) {
     let r_text = r_value_input.value;
     let r_number_text = Number(r_text);
     if ( r_text==="" || isNaN(r_number_text) || !isFinite(r_number_text) || r_number_text < 2 || r_number_text > 5){
-        alert("Пошёл нахуй");
+        alert("Ошибка, Значение R отсутствует или некорректен");
         return;
     } else {
         const rect = canvas.getBoundingClientRect();
